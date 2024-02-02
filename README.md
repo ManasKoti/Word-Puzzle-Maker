@@ -1,8 +1,8 @@
-## Word Search Puzzle Generator
+# Word Search Puzzle Generator
 
 This Python script allows you to generate a random word search puzzle and insert words of your choice into the grid.
 
-### How to Use
+## How to Use
 
 1. **Run the script:** Save the script as `main.py` and run it from the command line using `python main.py`.
 2. **Enter grid dimension:** You will be prompted to enter the desired dimension of the grid (number of rows and columns).
@@ -15,7 +15,7 @@ This Python script allows you to generate a random word search puzzle and insert
     * You can insert multiple words by entering "yes" when asked if you want to insert more words.
 4. **View the puzzle:** After finishing, the script will print the final grid with the inserted words.
 
-### Example
+## Example
 
 Here is an example of how the script might work:
 
@@ -31,11 +31,11 @@ T G P Y H
 Y W L K X
 ```
 
-### Notes
+## Notes
 
 * The script uses random letters to generate the grid.
 * Words are inserted in uppercase letters.
 * Words cannot be inserted diagonally or overlap with existing letters (This feature is planned for future).
 * The script does not check if the inserted word is a valid word (This feature is planned for future).
 
-I hope this helps!
+### I hope this helps!
