@@ -1,14 +1,12 @@
 import random
 
-ALPHABETS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
-             "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
-             "W", "X", "Y", "Z"]
+ALPHABETS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 def create_grid(dimension):
     grid = []
-    for _ in range(dimension):
+    for i in range(dimension):
         row = []
-        for _ in range(dimension):
+        for i in range(dimension):
             random_letter = random.choice(ALPHABETS)
             row.append(random_letter)
         grid.append(row)
