@@ -1,4 +1,4 @@
-# Word Search Puzzle Generator
+# Word Search Puzzle Maker
 
 This Python script allows you to generate a random word search puzzle and insert words of your choice into the grid.
 
