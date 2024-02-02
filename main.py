@@ -15,7 +15,7 @@ def create_grid(dimension):
     return grid
 
 def insert_word(grid, word, position):
-    x, y, direction = position
+    x, y, direction = position             #x = row, y = column
     word = word.upper()
     if direction == 'across':
         for i in range(len(word)):
