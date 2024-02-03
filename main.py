@@ -21,15 +21,20 @@ def insert_word(grid, word, position):
     elif direction == 'down':
         for i in range(len(word)):
             grid[x + i][y] = word[i]
-    elif direction == 'diagonal':
+    elif direction == 'diagonal_d':
         for i in range(len(word)):
             grid[x + i][y + i] = word[i]
+    elif direction == 'diagonal_u':
+        for i in range(len(word)):
+            grid[x - i][y + i] = word[i]
     return grid
 
 def accept_word():
     word = input("Enter the word to be inserted: ")
-    position = input("Enter the position (x, y, direction): ").split()
-    position = (int(position[0]), int(position[1]), position[2])
+    x = (int(input("Enter the row number: "))-1)
+    y = (int(input("Enter the column number: "))-1)
+    direction = input("Enter the direction (across/down/diagonal_u(right)/diagonal_d(right)): ")
+    position = (x, y, direction)
     return word, position
 
 dimension = int(input("Enter the dimension of the grid: "))
