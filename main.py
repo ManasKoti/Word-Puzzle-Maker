@@ -21,6 +21,9 @@ def insert_word(grid, word, position):
     elif direction == 'down':
         for i in range(len(word)):
             grid[x + i][y] = word[i]
+    elif direction == 'diagonal':
+        for i in range(len(word)):
+            grid[x + i][y + i] = word[i]
     return grid
 
 def accept_word():
